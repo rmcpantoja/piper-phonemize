@@ -87,6 +87,9 @@ jobs:
           cmake --install build
       - name: package
         run: |
+          cd lib
+          dir
+          cd ..
           pip install --upgrade pip setuptools wheel
           pip install pybind11
           pip wheel .
